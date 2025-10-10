@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>Bill - {{billNumber}}</title>
+        <style>
+            body { font-family: 'Inter', sans-serif; margin: 20px; color: #333; }
+            .container { max-width: 800px; margin: auto; border: 1px solid #eee; padding: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.1); border-radius: 8px; }
+            h1 { text-align: center; color: #4a90e2; margin-bottom: 20px; border-bottom: 2px solid #4a90e2; padding-bottom: 10px; }
+            .header-info, .vendor-info, .bill-details, .items-table { margin-bottom: 20px; }
+            .header-info div, .vendor-info div, .bill-details div { margin-bottom: 5px; }
+            .header-info span, .vendor-info strong, .bill-details strong { font-weight: bold; color: #555; }
+            table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+            th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+            th { background-color: #f2f2f2; color: #333; }
+            .total-amount { text-align: right; font-size: 1.2em; font-weight: bold; margin-top: 20px; }
+            .footer { text-align: center; margin-top: 30px; font-size: 0.8em; color: #777; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>BILL</h1>
+            <div class="header-info">
+                <div><strong>Bill Number:</strong> {{billNumber}}</div>
+                <div><strong>Bill Date:</strong> {{billDate}}</div>
+                <div><strong>Due Date:</strong> {{dueDate}}</div>
+            </div>
+            <div class="vendor-info">
+                <h2>Vendor Details:</h2>
+                <div><strong>Business Name:</strong> {{vendorBusinessName}}</div>
+                <div><strong>Contact Email:</strong> {{vendorContactEmail}}</div>
+                <div><strong>Address:</strong> {{vendorAddressStreet}}, {{vendorAddressCity}}, {{vendorAddressState}}, {{vendorAddressZipCode}}</div>
+            </div>
+            <div class="items-table">
+                <h2>Bill Items:</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Description</th>
+                            <th>Quantity</th>
+                            <th>Unit Price</th>
+                            <th>Line Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{items}}
+                    </tbody>
+                </table>
+            </div>
+            <div class="total-amount">
+                Total Amount: {{totalAmount}}
+            </div>
+            <div class="footer">
+                <p>Thank you for your business!</p>
+            </div>
+        </div>
+    </body>
+    </html>

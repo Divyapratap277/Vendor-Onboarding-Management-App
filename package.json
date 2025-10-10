@@ -1,0 +1,13 @@
+{
+  "name": "vms-project",
+  "version": "1.0.0",
+  "description": "VMS project with combined frontend and backend deployment",
+  "scripts": {
+    "start": "npm run start:backend",
+    "start:frontend": "cd frontend && npm run dev",
+    "start:backend": "cd backend && npm run start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

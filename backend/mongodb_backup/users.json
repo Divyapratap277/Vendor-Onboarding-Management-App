@@ -1,0 +1,12 @@
+[
+  {
+    "_id": "689dac6b2013a599c7e07968",
+    "name": "Admin",
+    "email": "dpadmin@example.com",
+    "password": "$2b$10$biX6TRbWHDk9dCSbRu2K.O3hdtpJs2KrGLJo1tkLiJy0V4Jy.s8T.",
+    "role": "admin",
+    "vendorDetails": null,
+    "createdAt": "2025-08-14T09:29:15.314Z",
+    "__v": 0
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "_id": "68a3ec414a9113d68b5a34e2",
+    "vendorName": "Test Vendor",
+    "vendorEmail": "test@example.com",
+    "token": "a5dd786c0ec080d974bfd9ae95b2f1079367a8db17c57a588411c9f903b9d10e",
+    "expiresAt": "2025-08-19T04:15:13.038Z",
+    "createdAt": "2025-08-19T03:15:13.039Z",
+    "documents": [],
+    "__v": 0
+  }
+]
