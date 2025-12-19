@@ -110,6 +110,4 @@ Contributions are welcome! Please feel free to submit a pull request.
 5. Push to the branch (`git push origin feature/your-feature`).
 6. Open a pull request.
 
-## License
 
-This project is licensed under the ISC License.
